@@ -38,34 +38,6 @@ exports.ui = (req, res) => {
       },
     ],
     
-    products: [
-      {
-        name: 'ABC',
-        value: 'ABC',
-      },
-      {
-        name: 'DEF',
-        value: 'DEF',
-      },
-      {
-        name: 'GHI',
-        value: 'GHI',
-      },
-    ],
-    
-    repActionType: [
-      {
-        name: 'ABC',
-        value: 'ABC',
-      },
-      {
-        name: 'DEF',
-        value: 'DEF',
-      },
-      {
-        name: 'GHI',
-        value: 'GHI',
-      },
-    ],
+   
   });
 };

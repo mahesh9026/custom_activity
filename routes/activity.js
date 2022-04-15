@@ -26,11 +26,7 @@ exports.execute = async (req, res) => {
         },
         values: {
           Suggestion_and_Insight: data.inArguments[0].suggestionInsight,
-          Dse_Config: data.inArguments[0].dseConfig,
-          Product: data.inArguments[0].products,
-          Rep_Action_Type: data.inArguments[0].repActionType,
-          SI_Expiry_Days:data.inArguments[0].expireDays,
-          Suggestion_Insight_Details: data.inArguments[0].suggestionDeatils,
+          Dse_Config: data.inArguments[0].dseConfig,   
         },
       },
     ]);

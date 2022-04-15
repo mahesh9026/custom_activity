@@ -20,39 +20,13 @@ block content
             abbr.slds-required(title='required')
             | Suggestion/Insight *
           .slds-form-element__control
-            input#Text.slds-input.js-activity-setting1(required='', placeholder='', name='suggestionInsight')
+            input#Text.slds-input.js-activity-setting(required='', placeholder='', name='suggestionInsight')
 
           label.slds-form-element__label(for="dseConfig") DSE Config
           .slds-form-element__control
             .slds-select_container
-              select#DropdownOptions.slds-select.js-activity-setting2(name='dseConfig')
+              select#DropdownOptions.slds-select.js-activity-setting(name='dseConfig')
                 each dse in dseConfig
                   option(value=dse.value)= dse.name
-           
-            label.slds-form-element__label(for="products") Product
-          .slds-form-element__control
-            .slds-select_container
-              select#DropdownOptions.slds-select.js-activity-setting3(name='products')
-                each product in products
-                  option(value=product.value)= product.name
-                  
-          label.slds-form-element__label(for="repActionType") REP Action Type
-          .slds-form-element__control
-            .slds-select_container
-              select#DropdownOptions.slds-select.js-activity-setting4(name='repActionType')
-                each rep in repActionType
-                  option(value=rep.value)= rep.name        
-          
-          label.slds-form-element__label.slds-p-top_medium(for='expireDays')
-            abbr.slds-required(title='required')
-            | Suggestion/Insight Expire After (Days)*
-          .slds-form-element__control
-            input#Text.slds-input.js-activity-setting5(required='', placeholder='', name='expireDays')
-          
-          label.slds-form-element__label.slds-p-top_medium(for='suggestionDeatils')
-            abbr.slds-required(title='required')
-            | Suggestion/Insight Deatils *
-          .slds-form-element__control
-            input#Text.slds-input.js-activity-setting6(required='', placeholder='', name='suggestionDeatils')
 
     footer.slds-card__footer

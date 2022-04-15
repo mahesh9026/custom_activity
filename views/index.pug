@@ -14,21 +14,19 @@ block content
             a.slds-card__header-link.slds-truncate(href="javascript:void(0);" title="Card Header")
               span= title
     .slds-card__body.slds-card__body_inner
-      form.js-settings-form
+    form.js-settings-form
         .slds-form-element
-          
-
-          label.slds-form-element__label(for="dseConfig") DSE Config
+          label.slds-form-element__label(for="DropdownOptions") DSE Config
           .slds-form-element__control
             .slds-select_container
-              select#DropdownOptions.slds-select.js-activity-setting(name='dseConfig')
-                each dse in dseConfig
-                  option(value=dse.value)= dse.name
-                  
-           label.slds-form-element__label.slds-p-top_medium(for='suggestionInsight')
+              select#DropdownOptions.slds-select.js-activity-setting(name='dropdownOptions')
+                each dropdownOption in dropdownOptions
+                  option(value=dropdownOption.value)= dropdownOption.name
+              
+          label.slds-form-element__label.slds-p-top_medium(for='Text')
             abbr.slds-required(title='required')
             | Suggestion/Insight *
           .slds-form-element__control
-            input#Text.slds-input.js-activity-setting(required='', placeholder='', name='suggestionInsight')       
+            input#Text.slds-input.js-activity-setting(required='', placeholder='', name='text')       
 
     footer.slds-card__footer

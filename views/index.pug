@@ -26,22 +26,22 @@ block content
           .slds-form-element__control
             .slds-select_container
               select#DropdownOptions.slds-select.js-activity-setting(name='dseConfig')
-                each dropdownOption in dseConfig
-                  option(value=dropdownOption.value)= dropdownOption.name
+                each dse in dseConfig
+                  option(value=dse.value)= dse.name
            
             label.slds-form-element__label(for="products") Product
           .slds-form-element__control
             .slds-select_container
               select#DropdownOptions.slds-select.js-activity-setting(name='products')
-                each dropdownOption in products
-                  option(value=dropdownOption.value)= dropdownOption.name
+                each product in products
+                  option(value=product.value)= product.name
                   
           label.slds-form-element__label(for="repActionType") REP Action Type
           .slds-form-element__control
             .slds-select_container
               select#DropdownOptions.slds-select.js-activity-setting(name='repActionType')
-                each dropdownOption in repActionType
-                  option(value=dropdownOption.value)= dropdownOption.name        
+                each rep in repActionType
+                  option(value=rep.value)= rep.name        
           
           label.slds-form-element__label.slds-p-top_medium(for='expireDays')
             abbr.slds-required(title='required')

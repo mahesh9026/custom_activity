@@ -16,40 +16,40 @@ block content
     .slds-card__body.slds-card__body_inner
       form.js-settings-form
         .slds-form-element
-          label.slds-form-element__label.slds-p-top_medium(for='Text')
+          label.slds-form-element__label.slds-p-top_medium(for='suggestionInsight')
             abbr.slds-required(title='required')
             | Suggestion/Insight *
           .slds-form-element__control
             input#Text.slds-input.js-activity-setting(required='', placeholder='', name='suggestionInsight')
 
-          label.slds-form-element__label(for="DropdownOptions") DSE Config
+          label.slds-form-element__label(for="dseConfig") DSE Config
           .slds-form-element__control
             .slds-select_container
               select#DropdownOptions.slds-select.js-activity-setting(name='dseConfig')
                 each dropdownOption in dseConfig
                   option(value=dropdownOption.value)= dropdownOption.name
            
-            label.slds-form-element__label(for="DropdownOptions") Product
+            label.slds-form-element__label(for="products") Product
           .slds-form-element__control
             .slds-select_container
               select#DropdownOptions.slds-select.js-activity-setting(name='products')
                 each dropdownOption in products
                   option(value=dropdownOption.value)= dropdownOption.name
                   
-          label.slds-form-element__label(for="DropdownOptions") REP Action Type
+          label.slds-form-element__label(for="repActionType") REP Action Type
           .slds-form-element__control
             .slds-select_container
               select#DropdownOptions.slds-select.js-activity-setting(name='repActionType')
                 each dropdownOption in repActionType
                   option(value=dropdownOption.value)= dropdownOption.name        
           
-          label.slds-form-element__label.slds-p-top_medium(for='Text')
+          label.slds-form-element__label.slds-p-top_medium(for='expireDays')
             abbr.slds-required(title='required')
             | Suggestion/Insight Expire After (Days)*
           .slds-form-element__control
             input#Text.slds-input.js-activity-setting(required='', placeholder='', name='expireDays')
           
-          label.slds-form-element__label.slds-p-top_medium(for='Text')
+          label.slds-form-element__label.slds-p-top_medium(for='suggestionDeatils')
             abbr.slds-required(title='required')
             | Suggestion/Insight Deatils *
           .slds-form-element__control

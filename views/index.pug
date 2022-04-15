@@ -16,11 +16,7 @@ block content
     .slds-card__body.slds-card__body_inner
       form.js-settings-form
         .slds-form-element
-          label.slds-form-element__label.slds-p-top_medium(for='suggestionInsight')
-            abbr.slds-required(title='required')
-            | Suggestion/Insight *
-          .slds-form-element__control
-            input#Text.slds-input.js-activity-setting(required='', placeholder='', name='suggestionInsight')
+          
 
           label.slds-form-element__label(for="dseConfig") DSE Config
           .slds-form-element__control
@@ -28,5 +24,11 @@ block content
               select#DropdownOptions.slds-select.js-activity-setting(name='dseConfig')
                 each dse in dseConfig
                   option(value=dse.value)= dse.name
+                  
+           label.slds-form-element__label.slds-p-top_medium(for='suggestionInsight')
+            abbr.slds-required(title='required')
+            | Suggestion/Insight *
+          .slds-form-element__control
+            input#Text.slds-input.js-activity-setting(required='', placeholder='', name='suggestionInsight')       
 
     footer.slds-card__footer

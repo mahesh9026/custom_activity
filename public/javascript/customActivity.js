@@ -111,12 +111,117 @@ function save() {
             }
         ];
 
-        $('.js-activity-setting').each(function () {
+        $('.js-activity-setting1').each(function () {
             const $el = $(this);
             const setting = {
                 id: $(this).attr('id'),
                 value: $(this).val()
             };
+            
+
+            $.each(payload['arguments'].execute.inArguments, function(index, value) {
+                if($el.attr('type') === 'checkbox') {
+                    if($el.is(":checked")) {
+                        value[setting.id] = setting.value;
+                    } else {
+                        value[setting.id] = 'false';
+                    }
+                } else {
+                    value[setting.id] = setting.value;
+                }
+            })
+        });
+        
+         $('.js-activity-setting2').each(function () {
+            const $el = $(this);
+            const setting = {
+                id: $(this).attr('id'),
+                value: $(this).val()
+            };
+            
+
+            $.each(payload['arguments'].execute.inArguments, function(index, value) {
+                if($el.attr('type') === 'checkbox') {
+                    if($el.is(":checked")) {
+                        value[setting.id] = setting.value;
+                    } else {
+                        value[setting.id] = 'false';
+                    }
+                } else {
+                    value[setting.id] = setting.value;
+                }
+            })
+        });
+         $('.js-activity-setting3').each(function () {
+            const $el = $(this);
+            const setting = {
+                id: $(this).attr('id'),
+                value: $(this).val()
+            };
+            
+
+            $.each(payload['arguments'].execute.inArguments, function(index, value) {
+                if($el.attr('type') === 'checkbox') {
+                    if($el.is(":checked")) {
+                        value[setting.id] = setting.value;
+                    } else {
+                        value[setting.id] = 'false';
+                    }
+                } else {
+                    value[setting.id] = setting.value;
+                }
+            })
+        });
+        
+         $('.js-activity-setting4').each(function () {
+            const $el = $(this);
+            const setting = {
+                id: $(this).attr('id'),
+                value: $(this).val()
+            };
+            
+
+            $.each(payload['arguments'].execute.inArguments, function(index, value) {
+                if($el.attr('type') === 'checkbox') {
+                    if($el.is(":checked")) {
+                        value[setting.id] = setting.value;
+                    } else {
+                        value[setting.id] = 'false';
+                    }
+                } else {
+                    value[setting.id] = setting.value;
+                }
+            })
+        });
+        
+         $('.js-activity-setting5').each(function () {
+            const $el = $(this);
+            const setting = {
+                id: $(this).attr('id'),
+                value: $(this).val()
+            };
+            
+
+            $.each(payload['arguments'].execute.inArguments, function(index, value) {
+                if($el.attr('type') === 'checkbox') {
+                    if($el.is(":checked")) {
+                        value[setting.id] = setting.value;
+                    } else {
+                        value[setting.id] = 'false';
+                    }
+                } else {
+                    value[setting.id] = setting.value;
+                }
+            })
+        });
+        
+         $('.js-activity-setting6').each(function () {
+            const $el = $(this);
+            const setting = {
+                id: $(this).attr('id'),
+                value: $(this).val()
+            };
+            
 
             $.each(payload['arguments'].execute.inArguments, function(index, value) {
                 if($el.attr('type') === 'checkbox') {

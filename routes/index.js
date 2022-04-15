@@ -53,7 +53,7 @@ exports.ui = (req, res) => {
       },
     ],
     
-    rep: [
+    repActionType: [
       {
         name: 'ABC',
         value: 'ABC',

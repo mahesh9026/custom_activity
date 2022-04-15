@@ -25,8 +25,8 @@ exports.execute = async (req, res) => {
           SubscriberKey: data.inArguments[0].contactKey,
         },
         values: {
-          Dse_Config: data.inArguments[0].dseConfig,  
-          Suggestion_and_Insight: data.inArguments[0].suggestionInsight,
+          Dse_Config: data.inArguments[0].DropdownOptions,
+          Suggestion_and_Insight: data.inArguments[0].Text,
         },
       },
     ]);

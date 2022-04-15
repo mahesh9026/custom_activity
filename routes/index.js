@@ -37,5 +37,35 @@ exports.ui = (req, res) => {
         value: 'GHI',
       },
     ],
+    
+    products: [
+      {
+        name: 'ABC',
+        value: 'ABC',
+      },
+      {
+        name: 'DEF',
+        value: 'DEF',
+      },
+      {
+        name: 'GHI',
+        value: 'GHI',
+      },
+    ],
+    
+    rep: [
+      {
+        name: 'ABC',
+        value: 'ABC',
+      },
+      {
+        name: 'DEF',
+        value: 'DEF',
+      },
+      {
+        name: 'GHI',
+        value: 'GHI',
+      },
+    ],
   });
 };

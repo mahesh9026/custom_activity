@@ -23,7 +23,7 @@ exports.config = (req, res) => {
 exports.ui = (req, res) => {
   res.render('index', {
     title: 'Custom Activity',
-    dseConfig: [
+    dropdownOptions: [
       {
         name: 'ABC',
         value: 'ABC',

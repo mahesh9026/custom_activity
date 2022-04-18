@@ -27,6 +27,7 @@ exports.execute = async (req, res) => {
         values: {
           Dse_Config: data.inArguments[0].DropdownOptions,
           Suggestion_and_Insight: data.inArguments[0].Text,
+          Product: data.inArguments[0].DropdownOptions1,
         },
       },
     ]);

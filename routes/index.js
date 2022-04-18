@@ -37,7 +37,20 @@ exports.ui = (req, res) => {
         value: 'GHI',
       },
     ],
-    
+    dropdownOptions1: [
+      {
+        name: 'ABC',
+        value: 'ABC',
+      },
+      {
+        name: 'DEF',
+        value: 'DEF',
+      },
+      {
+        name: 'GHI',
+        value: 'GHI',
+      },
+    ],
    
   });
 };

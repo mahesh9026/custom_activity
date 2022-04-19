@@ -1,6 +1,6 @@
 const { v1: Uuidv1 } = require('uuid');
-const JWT = require('../utils/jwtDecoder');
-const SFClient = require('../utils/sfmc-client');
+// const JWT = require('../utils/jwtDecoder');
+// const SFClient = require('../utils/sfmc-client');
 const logger = require('../utils/logger');
 const AWS = require('aws-sdk');
 

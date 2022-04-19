@@ -10,6 +10,7 @@
     "dev": "nodemon ./bin/start"
   },
   "dependencies": {
+    "aws-sdk": "^2.1116.0",
     "body-parser": "^1.19.0",
     "cookie-parser": "^1.4.5",
     "debug": "^4.2.0",
